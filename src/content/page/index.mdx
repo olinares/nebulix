@@ -198,18 +198,24 @@ blocks:
         href: /menu/drinks
         class_name: py-0
     block_class: my-0
-  - type: gallery
-    component: ImageGallery
+  - type: pricing
+    component: PricingTable
     title: Image Gallery
-    container: md
-    animate: false
-    images:
-      - image: /src/assets/cosmic_code.jpeg
-        title: Test
-      - image: /src/assets/cosmic_news.jpeg
-        title: Test 2
-      - image: /src/assets/cosmic_gin_tonic.jpeg
-        title: Test 3
+    style:
+      container: md
+    prices:
+      - title: Jeremy Carrier
+        intro: (925) 356-5670
+        price: "50"
+        surface: surface-base
+        buttons:
+          - icon_only: false
+            label: BOOK APPOINTMENT
+            href: https://www.squareup.com/appointments/book/3sk9c23kjpw4a/main-event-barbershop
+            color: surface-base
+            icon: /src/icons/shop.svg
+        features:
+          - label: Fast
 style:
   hero_template: image
   template: full
